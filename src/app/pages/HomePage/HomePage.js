@@ -147,27 +147,10 @@ const Home = () => {
             // Simulate API call delay
             await new Promise((resolve) => setTimeout(resolve, 1500));
 
-            // Mock API response based on "user behavior" (e.g., viewed products)
-            // For simplicity, let's suggest products not in viewed history, or random ones.
-            const availableProductsForSuggestions = products.filter(
-                (p) => !viewedProducts.some((vp) => vp.id === p.id),
-            );
-
             let suggestions = [];
-            if (availableProductsForSuggestions.length > 0) {
-                // Get 3 random unique suggestions
-                const shuffled = [...availableProductsForSuggestions].sort(() => 0.5 - Math.random());
-                suggestions = shuffled.slice(0, suggestedProductNum);
-            } else {
-                // If all products viewed, just pick 3 random from all products
-                const shuffled = [...products].sort(() => 0.5 - Math.random());
-                suggestions = shuffled.slice(0, suggestedProductNum);
-            }
 
-            // Simulate a potential API error 10% of the time
-            // if (Math.random() < 0.1) { // Removed this line to prevent simulated errors
-            //   throw new Error('Lỗi khi lấy gợi ý từ AI.');
-            // }
+            const shuffled = [...products].sort(() => 0.5 - Math.random());
+            suggestions = shuffled.slice(0, suggestedProductNum);
 
             setSuggestedProducts(suggestions);
         } catch (error) {
