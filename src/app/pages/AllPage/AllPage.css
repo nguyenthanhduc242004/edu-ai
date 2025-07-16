@@ -1,0 +1,9 @@
+.slider .thumb {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #275efe;
+    top: -10px;
+}

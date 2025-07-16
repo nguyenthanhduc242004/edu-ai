@@ -1,0 +1,92 @@
+{
+    "courses": [
+        {
+            "id": "1",
+            "name": "Khóa học Lập trình Web Frontend từ A-Z",
+            "price": 950000,
+            "image": "https://placehold.co/400x300/F2F2F2/333333?text=FE+A-Z",
+            "shortDescription": "Học React, Vue, Angular và các công nghệ mới nhất.",
+            "longDescription": "Khóa học toàn diện này sẽ đưa bạn từ người mới bắt đầu đến chuyên gia lập trình web frontend. Bạn sẽ học HTML, CSS, JavaScript, React, Vue, Angular, quản lý state, tối ưu hiệu suất và triển khai ứng dụng thực tế. Bao gồm các dự án thực hành và bài tập coding.",
+            "rating": 4.8,
+            "reviews": 125,
+            "createdDate": "2025-06-14"
+        },
+        {
+            "id": "2",
+            "name": "Giáo trình Tiếng Anh Giao Tiếp Cao Cấp",
+            "price": 450000,
+            "image": "https://placehold.co/400x300/E0E0E0/333333?text=English+Pro",
+            "shortDescription": "Nâng cao kỹ năng giao tiếp tiếng Anh cho công việc và đời sống.",
+            "longDescription": "Giáo trình này được thiết kế để giúp bạn tự tin giao tiếp tiếng Anh trong mọi tình huống. Tập trung vào từ vựng chuyên ngành, ngữ pháp nâng cao, và các tình huống giao tiếp thực tế. Kèm theo bài tập nghe, nói, đọc, viết và các đoạn hội thoại mẫu.",
+            "rating": 4.5,
+            "reviews": 80,
+            "createdDate": "2025-07-10"
+        },
+        {
+            "id": "3",
+            "name": "Lớp học Trực tuyến Thiết kế UI/UX",
+            "price": 1200000,
+            "image": "https://placehold.co/400x300/D0D0D0/333333?text=UI/UX+Design",
+            "shortDescription": "Học cách tạo ra giao diện người dùng đẹp và trải nghiệm tuyệt vời.",
+            "longDescription": "Tham gia lớp học trực tuyến này để nắm vững các nguyên tắc thiết kế UI/UX, sử dụng các công cụ như Figma, Sketch, Adobe XD. Bạn sẽ học về wireframing, prototyping, user research, testing và cách tạo ra các sản phẩm số thân thiện với người dùng.",
+            "rating": 4.9,
+            "reviews": 200,
+            "createdDate": "2025-08-07"
+        },
+        {
+            "id": "4",
+            "name": "Tài liệu Ôn thi IELTS Toàn Diện",
+            "price": 600000,
+            "image": "https://placehold.co/400x300/C0C0C0/333333?text=IELTS+Prep",
+            "shortDescription": "Bộ tài liệu đầy đủ giúp bạn đạt điểm cao trong kỳ thi IELTS.",
+            "longDescription": "Bộ tài liệu này bao gồm các bài tập thực hành cho cả 4 kỹ năng (Nghe, Nói, Đọc, Viết), đề thi mẫu, chiến lược làm bài và các mẹo hữu ích để tối ưu hóa điểm số của bạn. Phù hợp cho cả người mới bắt đầu và những người muốn nâng cao band điểm.",
+            "rating": 4.7,
+            "reviews": 150,
+            "createdDate": "2025-07-05"
+        },
+        {
+            "id": "5",
+            "name": "Khóa học Phân tích Dữ liệu với Python",
+            "price": 1100000,
+            "image": "https://placehold.co/400x300/B0B0B0/333333?text=Data+Python",
+            "shortDescription": "Học cách sử dụng Python để phân tích và trực quan hóa dữ liệu.",
+            "longDescription": "Khóa học này sẽ trang bị cho bạn kiến thức và kỹ năng cần thiết để làm việc với dữ liệu bằng Python. Bạn sẽ học về Pandas, NumPy, Matplotlib, Seaborn, và cách thực hiện các phân tích thống kê, machine learning cơ bản.",
+            "rating": 4.6,
+            "reviews": 90,
+            "createdDate": "2025-06-01"
+        },
+        {
+            "id": "6",
+            "name": "Sách Ebook \"Marketing Kỹ Thuật Số 4.0\"",
+            "price": 300000,
+            "image": "https://placehold.co/400x300/A0A0A0/333333?text=Digital+Marketing",
+            "shortDescription": "Cập nhật xu hướng và chiến lược marketing mới nhất.",
+            "longDescription": "Ebook này cung cấp cái nhìn sâu sắc về marketing kỹ thuật số trong kỷ nguyên 4.0. Bạn sẽ khám phá các chiến lược SEO, SEM, Content Marketing, Social Media Marketing, Email Marketing và cách đo lường hiệu quả các chiến dịch.",
+            "rating": 4.4,
+            "reviews": 70,
+            "createdDate": "2025-05-03"
+        },
+        {
+            "id": "7",
+            "name": "Khóa học Nấu ăn Món Việt Truyền Thống",
+            "price": 700000,
+            "image": "https://placehold.co/400x300/909090/333333?text=Vietnamese+Food",
+            "shortDescription": "Học cách chế biến các món ăn Việt Nam ngon chuẩn vị.",
+            "longDescription": "Khóa học này sẽ hướng dẫn bạn từng bước để nấu các món ăn truyền thống của Việt Nam, từ phở, bún chả đến gỏi cuốn và chè. Bao gồm các video hướng dẫn chi tiết, công thức và mẹo vặt từ đầu bếp chuyên nghiệp.",
+            "rating": 4.7,
+            "reviews": 110,
+            "createdDate": "2025-04-02"
+        },
+        {
+            "id": "8",
+            "name": "Lớp học Yoga Online cho Người Mới Bắt Đầu",
+            "price": 550000,
+            "image": "https://placehold.co/400x300/808080/333333?text=Yoga+Beginner",
+            "shortDescription": "Giúp bạn thư giãn, tăng cường sức khỏe và sự dẻo dai.",
+            "longDescription": "Lớp học này được thiết kế đặc biệt cho những người mới làm quen với Yoga. Bạn sẽ học các tư thế cơ bản, kỹ thuật hít thở và cách thiền định để cải thiện sức khỏe thể chất và tinh thần. Các buổi học được hướng dẫn bởi giáo viên giàu kinh nghiệm.",
+            "rating": 4.9,
+            "reviews": 180,
+            "createdDate": "2025-07-14"
+        }
+    ]
+}

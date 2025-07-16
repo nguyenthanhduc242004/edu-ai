@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Optional: Add Inter font if not already available globally */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+    --color-main: #16b53b;
+}
+
+.flex-col-1 {
+    @apply flex-none basis-[calc(100%-20px)];
+}
+
+.flex-col-2 {
+    @apply flex-none basis-[calc(50%-20px)];
+}
+
+.flex-col-3 {
+    @apply flex-none basis-[calc(33.3333%-20px)];
+}
+
+.flex-col-4 {
+    @apply flex-none basis-[calc(25%-20px)];
+}
