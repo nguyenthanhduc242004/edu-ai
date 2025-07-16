@@ -1,18 +1,16 @@
 import { createContext, useCallback, useEffect, useState } from 'react';
 
 import mockProducts from '../../mocks/db.json';
-import Home from '../pages/HomePage/HomePage';
 import ProductDetailModal from '../components/ProductDetailModal';
-import ChatbotModal from '../components/ChatbotModal';
 import ToastNotification from '../components/ToastNotification/ToastNotification';
 
 const GlobalContext = createContext(null);
 
 export default GlobalContext;
 
-let bpSm = getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sm').trim();
-let bpLg = getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-lg').trim();
-let bpXl = getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xl').trim();
+let bpSm = '40rem';
+let bpLg = '64rem';
+let bpXl = '80rem';
 
 const colNum = {
     base: 1,
@@ -59,10 +57,11 @@ export const GlobalProvider = ({ children }) => {
     const handleProductDetailClick = useCallback((product) => {
         setSelectedProduct(product);
         setShowDetailModal(true);
+
         // Add to viewed products, ensuring no duplicates and limited history size
         setViewedProducts((prevViewed) => {
             const newViewed = [product, ...prevViewed.filter((p) => p.id !== product.id)];
-            return newViewed.slice(0, 10); // Keep last 10 viewed products
+            return newViewed.slice(0, 8); // Keep last 8 viewed products
         });
     }, []);
 
@@ -83,11 +82,6 @@ export const GlobalProvider = ({ children }) => {
     const [currentPage, setCurrentPage] = useState('/');
 
     useEffect(() => {
-        const computedStyle = getComputedStyle(document.documentElement);
-        bpSm = computedStyle.getPropertyValue('--breakpoint-sm').trim();
-        bpLg = computedStyle.getPropertyValue('--breakpoint-lg').trim();
-        bpXl = computedStyle.getPropertyValue('--breakpoint-xl').trim();
-
         setCurrentMediaType(getCurrentMediaType());
 
         const handleWindowResize = () => {
